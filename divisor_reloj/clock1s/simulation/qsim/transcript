@@ -1,0 +1,66 @@
+# do clock1s.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:35 on May 01,2025
+# vcom -work work clock1s.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneiv_atom_pack
+# -- Loading package cycloneiv_components
+# -- Compiling entity hard_block
+# -- Compiling architecture structure of hard_block
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Compiling entity clock1s
+# -- Compiling architecture structure of clock1s
+# End time: 12:39:35 on May 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:35 on May 01,2025
+# vcom -work work Waveform14.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity clock1s_vhd_vec_tst
+# -- Compiling architecture clock1s_arch of clock1s_vhd_vec_tst
+# End time: 12:39:35 on May 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneiv -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.clock1s_vhd_vec_tst 
+# Start time: 12:39:35 on May 01,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.clock1s_vhd_vec_tst(clock1s_arch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading cycloneiv.cycloneiv_atom_pack(body)
+# Loading cycloneiv.cycloneiv_components
+# Loading work.clock1s(structure)
+# Loading work.hard_block(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneiv.cycloneiv_io_obuf(arch)
+# Loading cycloneiv.cycloneiv_io_ibuf(arch)
+# Loading cycloneiv.cycloneiv_clkctrl(vital_clkctrl)
+# Loading cycloneiv.cycloneiv_ena_reg(behave)
+# Loading cycloneiv.cycloneiv_lcell_comb(vital_lcell_comb)
+# Loading altera.dffeas(vital_dffeas)
+# ** Warning: Design size of 11819 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# after#35
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libnss_mymachines.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libcap.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libnss_resolve.so.2 : module was loaded at an absolute address.
+# End time: 12:39:35 on May 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 11

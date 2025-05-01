@@ -1,0 +1,34 @@
+library ieee;
+use ieee.std_logic_1164;
+use ieee.std_logic_arith;
+use ieee.std_logic_unsigned;
+
+entity clock1s is
+port(
+	clock50mhz: in std_logic;
+	reset: in std_logic;
+	clock1s: out std_logic
+	);
+end entity;
+
+architecture behavioral of clock1s is
+constant max_counter:integer:=50_000_000-1;
+signal counter: integer:=0;
+signal counter_registro: integer:='0';
+
+begin
+process(clock50mhz, reset)
+	begin
+	if reset='1' then
+	counter<=0;
+	counter_registro<='0';
+		elsif rising_edge(clock50mhz) then
+			if counter=max_counter then
+				counter<=0;
+				counter_registro<=not counter_registro;
+			else
+			counter<=counter+1;
+			end if;
+	end if;
+end process;
+end architecture;
